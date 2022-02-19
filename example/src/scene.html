@@ -1,12 +1,9 @@
-<a-scene environment="preset: forest; seed: 123; shadowSize: 5">
+<a-scene>
   <require path="templates/assets.html"></require>
 
-  <!-- Box. -->
-  <a-entity geometry="primitive: box" material="color: #f00" position="-1 0.5 -3" rotation="0 45 0" shadow spin></a-entity>
-
-  <!-- Sphere. -->
-  <a-entity geometry="primitive: sphere; radius: 1.25" material="color: #EF2D5E" position="0 1.25 -5" shadow></a-entity>
-
   <!-- Cylinder. -->
-  <a-entity geometry="primitive: cylinder; radius: 0.5; height: 1.5" material="color: #FFC65D" position="1 0.75 -3" shadow spin></a-entity>
+  <a-entity id="waveform" geometry="primitive: cylinder; radius: 0.5; height: 30" material="color: red" position="0 0 40"></a-entity>
+  <a-curvedimage src="#waveform-src" height="30.0" radius="50.7" theta-length="360"
+                 rotation="0 100 0" scale="0.8 0.8 0.8" playhead></a-curvedimage>
+
 </a-scene>
