@@ -7,7 +7,7 @@
     "lint": "semistandard -v | snazzy",
     "lint:fix": "semistandard --fix",
     "predeploy": "npm run build && shx mkdir -p .ghpages && cp -r index.html assets build .ghpages",
-    "start": "webpack-dev-server --host 0.0.0.0 --progress --colors --hot-only --inline --port 3000"
+    "start": "webpack-dev-server --host 0.0.0.0 --progress --colors --hot-only --inline --port 8000"
   },
   "dependencies": {
     "@babel/cli": "^7.2.3",
@@ -33,6 +33,7 @@
     "aframe-super-hot-html-loader": "*",
     "aframe-super-hot-loader": "*",
     "ansi-html": "0.0.7",
+    "ansi-html-community": "0.0.8",
     "autoprefixer": "^7.2.3",
     "babel-loader": "^8.0.5",
     "babel-minify-webpack-plugin": "^0.3.1",
